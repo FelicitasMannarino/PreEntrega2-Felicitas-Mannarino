@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
+
+.box-count{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin-left: 0.5rem;
+    max-width: 300px;
+}
+
+.box-count button{
+    background-color: transparent;
+    border: none;
+    margin: 0.5rem;
+}
+
+p{
+    margin-top: 0.9rem;
+}
+
+.box-count-children{
+    display: flex;  
+}
+
+.box-count-grandchild{
+    border: 1px solid rgb(178, 174, 174);
+    border-radius: 10%;
+    display: flex; 
+}
+
+ .box-count-onadd{
+    background-color: #dcd0c2;
+    max-height: 35px;
+    max-width: 300px;
+    margin: 0.7rem 0.3rem;
+    border-radius: 5%;
+}
