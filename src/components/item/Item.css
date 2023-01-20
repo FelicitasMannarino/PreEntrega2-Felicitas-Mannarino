@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
+
+.card-box{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card{
+   
+    max-width: 15rem;
+    margin: 1rem;
+    float: left;
+    border: none;
+    margin-left: 4.5rem;
+}
+
+.card-img{
+    max-height: 15rem;
+    max-width: 15rem;
+}
+
+.card-price{
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-name{
+    justify-content: center;
+    font-size: 13px;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+.card-link{
+    margin-left: 4.5rem;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.card-link:hover{
+    color: rgb(59, 59, 59);
+}
+

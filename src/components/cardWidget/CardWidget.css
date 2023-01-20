@@ -1,44 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
 
-.mensaje{
-    margin-top: 3rem;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    text-decoration: underline #937653;
-} 
+i{
+    font-size: 20px;
+    float: right;
+    margin-right: 30px;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+}
 
-@media (max-width: 900px) {
-    .mensaje{
-        font-size: small;
+i:hover{
+    border-bottom: 2px solid #cbb195;
+    padding-bottom: 5%;
+}
+
+.cantidad{
+    background-color: #9e8468;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 5%;
+}
+
+span{
+    font-size: 15px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+@media (max-width: 990px) {
+    .box-card{
+        margin-left: 94%;
+        margin-top: 2%;
+        position: absolute;
     }
 }
 
-.categories{
-    font-family: 'Montserrat', sans-serif;
-    justify-content: center;
+@media (max-width: 700px) {
+    .box-card{
+        margin-left: 93%;
+        margin-top: 3%;
+        position: absolute;
+    }
+    i{
+        font-size: 15px;
+    }
+    span{
+        font-size: 13px;
+    }
+    .cantidad{
+        width: 15px;
+        height: 15px;
+    }
 }
 
-.categories button{
-    border: none;
-    background-color: transparent;
+@media (max-width: 540px) {
+    .box-card{
+        margin-left: 90%;
+        margin-top: 3%;
+        position: absolute;
+    }
 }
 
-.categories-list{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    justify-content: center;
-    margin-top: 3rem;
-    font-size: 15px;
-}  
+ @media (max-width: 430px) {
+    .box-card{
+        margin-left: 88%;
+        margin-top: 4%;
+        position: absolute;
+    }
+} 
 
-.categories-list li{
-    margin-left: 0.5rem;
-    padding: 0;
-    margin-left: 5%;
-}
+@media (max-width: 365px) {
+    .box-card{
+        margin-left: 85%;
+        margin-top: 5%;
+        position: absolute;
+    }
+} 
 
-.categories-list li:hover{
-    border-bottom: 1px solid black;
-
+@media (max-width: 296px) {
+    .box-card{
+        margin-left: 83%;
+        margin-top: 6%;
+        position: absolute;
+    }
 }

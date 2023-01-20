@@ -5,16 +5,20 @@
     display: flex;
     margin-left: 0.5rem;
     max-width: 300px;
+    max-height: 35px;
+   
 }
 
 .box-count button{
     background-color: transparent;
     border: none;
     margin: 0.5rem;
+    font-size: small;
 }
 
-p{
-    margin-top: 0.9rem;
+.count{
+    margin-top: 0.5rem;
+    font-size: 15px;
 }
 
 .box-count-children{
@@ -22,15 +26,18 @@ p{
 }
 
 .box-count-grandchild{
+
     border: 1px solid rgb(178, 174, 174);
     border-radius: 10%;
     display: flex; 
+    max-width: 100px;
+
 }
 
  .box-count-onadd{
     background-color: #dcd0c2;
-    max-height: 35px;
-    max-width: 300px;
-    margin: 0.7rem 0.3rem;
+    
+   
+    margin: 0 0.3rem;
     border-radius: 5%;
 }
