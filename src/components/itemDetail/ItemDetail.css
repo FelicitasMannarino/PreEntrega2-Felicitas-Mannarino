@@ -13,7 +13,6 @@
 .detail-name{
     margin-top: 5rem;
     margin-left: 80%;
-    
     border-bottom: 2px solid black ;
 }
 
@@ -26,3 +25,18 @@
 .detail-price{
     font-weight: bold;
 }
+
+
+.box-count-onadd button{
+    border: none;
+    margin: 0.5rem;
+    font-size: small;
+    margin-top: -2rem;
+}
+
+.box-count-onadd{
+    background-color: #dcd0c2;
+    margin-left: 1rem;
+    border-radius: 10%;
+} 
+

@@ -4,24 +4,26 @@ import { useState } from 'react'
 import './ItemCount.css';
 
 const ItemCount = (props) => {
-    const [count,setCount] = useState(1)
+    const [count,setCount] = useState(0)
 
     const disOne = () =>{
-        if(count > 1){
+        if(count > 0){
             setCount(count - 1)
+
+            props.cantidades(count)
         }
     }
 
     const addOne = () => {
         if(count < props.stock){
             setCount(count + 1)
+
+            props.cantidades(count)
         }
         
     }
 
-    const onAdd = () =>{
-        console.log(count);
-    }
+
 
     return(
       <div className='box-count'>
@@ -31,9 +33,6 @@ const ItemCount = (props) => {
             <p className='count'>{count}</p>
             <button onClick={addOne}>+</button>
            </div>
-        </div>
-        <div className='box-count-onadd' >
-        <button  onClick={onAdd}>Agregar al carrito</button>
         </div>
       </div> 
     )
