@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
 
-i{
+.box-card i{
     font-size: 20px;
     float: right;
     margin-right: 30px;
@@ -9,7 +9,7 @@ i{
     align-items: center;
 }
 
-i:hover{
+.box-card i:hover{
     border-bottom: 2px solid #cbb195;
     padding-bottom: 5%;
 }
@@ -44,7 +44,7 @@ span{
         margin-top: 3%;
         position: absolute;
     }
-    i{
+    .box-card i{
         font-size: 15px;
     }
     span{

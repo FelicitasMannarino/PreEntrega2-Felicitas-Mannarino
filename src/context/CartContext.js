@@ -2,18 +2,25 @@ import { useContext, createContext, useState } from "react";
 
 export const CartContext = createContext([])
 
-const useCartContext = () => (useContext(CartContext))
+export const useCartContext = () => { return useContext(CartContext) }
 
-const CartProvider = () =>{
+const CartProvider = ({children}) =>{
 
     const [items, setItems] = useState()
 
-    const mostrarMensaje = () =>{
-        
+    console.log(items);
+
+    const addItem = (data) =>{
+        const listaActual = items
+        listaActual.push(data)
+        setItems(listaActual)
+        console.log(items);
     }
 
     return(
-        <></>
+        <CartContext.Provider value={{items, addItem}}>
+         {children}
+        </CartContext.Provider>
     )
 
 }

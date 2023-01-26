@@ -1,6 +1,6 @@
 import './Home.css';
 import Carousel from 'react-bootstrap/Carousel';
-import ItemList from '../itemList/ItemList';
+import ItemListContainer from '../itemListContainer/ItemListContainer';
 
 const Home = () =>{
     return (
@@ -22,7 +22,7 @@ const Home = () =>{
         </Carousel.Item>
       </Carousel>
       <h3  className='more'>Nuestros productos</h3>
-        <ItemList/>
+        <ItemListContainer/>
       </div>
     );
   }

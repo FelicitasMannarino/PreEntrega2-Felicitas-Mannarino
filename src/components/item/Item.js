@@ -5,11 +5,9 @@ import ItemCount from '../itemCount/ItemCount';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Item = (props) =>{
+const Item = ({name,price,stock,id,image}) =>{
     
     const [cantidad, setCantidad] = useState(0)
-
-    const {name,price,stock,id,image} = props.data
 
     const tomarCantidad = (numero) =>{
     setCantidad(numero)

@@ -2,6 +2,7 @@ import './ItemDetail.css'
 
 import ItemCount from '../itemCount/ItemCount' 
 import { useState } from 'react'
+import {useCartContext} from '../../context/CartContext'
 
 
 
@@ -9,17 +10,27 @@ import { useState } from 'react'
 
 const ItemDetail = (props) => {
 
+    const {addItem} = useCartContext()
+
     const [cantidad, setCantidad] = useState(0)
 
-    const {name,price,image,description,stock} = props.data
+    const {name,price,image,description,stock,id,category} = props.data
+
 
     const tomarCantidad = (numero) =>{
     setCantidad(numero)
     }
 
-    const onAdd = () =>{
-        console.log(`una cantidad de ${cantidad} y el precio total es ${cantidad * price}`);
-    }
+     const onAdd = () =>{
+        const product = {
+            id:id,
+            name:name,
+            category:category,
+            price:price,
+            count:cantidad,
+        }
+        addItem(product)
+     }
 
 
     return (

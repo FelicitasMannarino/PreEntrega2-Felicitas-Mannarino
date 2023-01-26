@@ -2,30 +2,18 @@
 
 .redes{
     position: static;
-}
-
-.redes ul{
-    display: flex;
-    float: left;
-    list-style: none;
     text-align: center;
-    margin-left: 45%;
-    margin-top: 5rem;
-}
-
-.redes ul li i{
-    font-size: medium;
-    position: static;
-}
-
-.redes ul li:hover{
-    color: rgb(49, 49, 49);
-}
-
-.redes p{
-    font-family: 'Montserrat', sans-serif;
     font-size: small;
-    margin-right: 40%;
-    margin-left: 47.5%;
-  
+    margin-top: 10%;
+}
+
+.redes ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-right: 4.5%;
+}
+
+.redes ul li{
+    margin-left: 2%;
 }
