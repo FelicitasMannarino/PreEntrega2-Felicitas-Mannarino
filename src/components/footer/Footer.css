@@ -3,16 +3,18 @@
 .redes{
     text-align: center;
     font-size: small;
-    margin-top: 50%;
+   
 }
 
 .redes ul {
     display: flex;
     list-style: none;
-    justify-content: center;
-    margin-right: 4.5%;
+    float: left;
+    margin-left: 50%;
+
+   
 }
 
 .redes ul li{
-    margin-left: 2%;
+ 
 }

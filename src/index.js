@@ -29,10 +29,10 @@ root.render(
      <BrowserRouter>
       <NavBar/>
        <Routes>
-        <Route exact path='/' element={<Home/>}/>
+        <Route exact path='/' element={<Home situation="Inicio"/>}/>
         <Route exact path='/productos' element={<ItemListContainer greeting="Bienvenidos a Vanilla"/>}/>
         <Route exact path='/productos/:productoName/:productoId' element={<ItemDetailContainer/>}/>
-        <Route exact path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
+        <Route exact path='/categoria/:categoriaId' element={<ItemListContainer greeting="Bienvenidos a Vanilla"/>}/>
         <Route exact path='/nosotros' element={<AboutUs/>}/>
         <Route exact path='/contacto' element={<Contact/>}/>
         <Route exact path='*' element={<NotFound404/>}/>

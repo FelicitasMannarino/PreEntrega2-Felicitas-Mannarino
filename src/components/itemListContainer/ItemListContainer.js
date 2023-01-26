@@ -46,6 +46,7 @@ const ItemListContainer = (props) => {
 
   return(
     <div>
+      {(window.location.pathname !== "/" )&&
       <div className='categories'>
         <ul className='categories-list'>
           <li><Link className='category-link' to="/productos">Todos</Link></li>
@@ -55,6 +56,7 @@ const ItemListContainer = (props) => {
           <li><Link className='category-link' to="/categoria/Mantas y almohadones ">Mantas y almohadones</Link></li>
         </ul>
       </div>
+      }  
       <p className='mensaje'>{props.greeting}, esperamos que encuentren lo que buscan</p>
       <ItemList productos={productos}/>
     </div>
