@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
 
 .redes{
-    position: static;
     text-align: center;
     font-size: small;
-    margin-top: 10%;
+    margin-top: 50%;
 }
 
 .redes ul {
