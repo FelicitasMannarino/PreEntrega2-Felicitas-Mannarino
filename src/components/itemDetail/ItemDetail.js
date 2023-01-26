@@ -1,7 +1,7 @@
 import './ItemDetail.css'
 
 import ItemCount from '../itemCount/ItemCount' 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 
 

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
+
+.not-found-box{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.not-found-box h1{
+    font-weight: bolder;
+    font-size: 60px;
+    color: black;
+}
+
+.not-found-box p{
+    font-size: 0.9rem;
+}
+
+.not-found-link{
+    color: black;
+}
+
+.not-found-link:hover{
+    color: rgb(49, 49, 49);
+}

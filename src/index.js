@@ -9,11 +9,14 @@ import NavBar from './components/navBar/NavBar.js';
 import Home from './components/home/Home.js';
 import ItemListContainer from './components/itemListContainer/ItemListContainer.js';
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer.js';
+import ItemCategoryContainer from './components/itemCategoryContainer/ItemCategoryContainer';
 import AboutUs from './components/aboutUs/AboutUs';
 import Contact from './components/contact/Contact.js';
 import Footer from './components/footer/Footer.js';
+import NotFound404 from './components/notFound404/NotFound404.js';
 
 import reportWebVitals from './reportWebVitals';
+
 
 
 
@@ -29,9 +32,10 @@ root.render(
       <Route exact path='/' element={<Home/>}/>
       <Route exact path='/productos' element={<ItemListContainer greeting="Bienvenidos a Vanilla"/>}/>
       <Route exact path='/productos/:productoName/:productoId' element={<ItemDetailContainer/>}/>
-      <Route exact path='/categoria/:categoriaId' element={<ItemDetailContainer/>}/>
+      <Route exact path='/categoria/:categoriaId' element={<ItemCategoryContainer/>}/>
       <Route exact path='/nosotros' element={<AboutUs/>}/>
       <Route exact path='/contacto' element={<Contact/>}/>
+      <Route exact path='*' element={<NotFound404/>}/>
     </Routes>
     
     <Footer/>

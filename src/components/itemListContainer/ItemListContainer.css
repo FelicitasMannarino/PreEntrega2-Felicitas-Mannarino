@@ -41,3 +41,13 @@
     border-bottom: 1px solid black;
 
 }
+
+.category-link{
+    color: black;
+    text-decoration: none;
+}
+
+.category-link:hover{
+    text-decoration: none;
+    color: black;
+}
