@@ -5,10 +5,8 @@
 }
 
 .card{
-   
     max-width: 15rem;
     margin: 1rem;
-    float: left;
     border: none;
     margin-left: 4.5rem;
 }
@@ -35,9 +33,34 @@
     font-size: 15px;
     color: black;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .card-link:hover{
-    color: rgb(59, 59, 59);
+   color: black;
 }
+
+.card-details{
+    position: relative;
+}
+
+.card-details::after{
+    content: '';
+    position: absolute;
+    width: 38%;
+    height: 1px;
+    bottom: 0;
+    left: 70px;
+    right: 0;
+    background-color: #937653;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.card-details:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 

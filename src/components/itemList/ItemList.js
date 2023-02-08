@@ -4,10 +4,7 @@ import './ItemList.css'
 import Item from '../item/Item'
 
 
-
-
 const ItemList = ({productos}) => {
-
 
     return(
         <div>
@@ -15,8 +12,6 @@ const ItemList = ({productos}) => {
             <Item key={elem.id} {...elem} />
           ))}
         </div>
-
-        
     )
 
 }

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
 
-.more{
+.home-products{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-top: 2rem;
     background-color: #e8e2db7c;
+    margin-bottom: 50px;
 }

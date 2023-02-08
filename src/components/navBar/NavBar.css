@@ -36,15 +36,40 @@ nav{
 }
 
 .list li{
-    padding-left: 50px;
+    margin-left: 50px;
+    position: relative;
 }
 
-.nav-link:hover{
-    font-weight: bold;
-    border-bottom: 2px solid #cbb195;
-    padding-bottom: 1%;
+.list li:visited{
+    color: tomato;
 }
 
+.list li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #937653;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.list li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-cart{
+    color: black;
+}
+
+.nav-cart:hover{
+    color: black;
+}
 
 @media (max-width: 900px) {
     .title{

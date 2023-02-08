@@ -41,8 +41,6 @@ const ItemListContainer = (props) => {
     }
   }, [categoriaId])
 
-  console.log(productos);
-
 
   return(
     <div>
@@ -57,8 +55,8 @@ const ItemListContainer = (props) => {
         </ul>
       </div>
       }  
-      <p className='mensaje'>{props.greeting}, esperamos que encuentren lo que buscan</p>
       <ItemList productos={productos}/>
+      <div className='situation'><p>{props.situation}</p></div>
     </div>
 
 )

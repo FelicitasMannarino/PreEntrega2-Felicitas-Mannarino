@@ -15,7 +15,7 @@ const Navbar = () => {
              </button>
              <div className='collapse navbar-collapse' id='navbarSupportedContent'>
               <ul className='list navbar-nav me-auto mb-2 mb-lg-0'>
-                <li className='nav-item item1'>
+                <li className='nav-item'>
                   <Link className='nav-link nav-us' aria-current='page' to='/'>Inicio</Link>
                 </li>
                 <li className='nav-item'>
@@ -30,7 +30,7 @@ const Navbar = () => {
                </ul>
             </div>
           </div>
-          <CardWidget cantidad='5'/>
+          <Link className='nav-cart' to="/carrito"><CardWidget cantidad='5'/></Link>
         </nav> 
         </header>
     )

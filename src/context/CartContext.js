@@ -10,11 +10,36 @@ const CartProvider = ({children}) =>{
 
     console.log(items);
 
+    const amountItems = () =>{
+        return items.length
+    }
+
     const addItem = (data) =>{
-        const listaActual = items
-        listaActual.push(data)
-        setItems(listaActual)
-        console.log(items);
+        if (isInCart(data.id)) {
+            alert("El producto ya esta en el carrito.")
+        }else{
+            const currentList = items
+            currentList.push(data)
+            setItems(currentList)
+            console.log(items);
+        }
+    }
+
+    const removeItem = (id) =>{
+        const newList = items.filter(e => e.id !== id)
+        setItems(newList)
+    }
+
+    const clearCart = () =>{
+        setItems([])
+    }
+
+    const isInCart = (id) =>{
+        if(items.find(e => e.id === id)){
+            return true
+        }else{
+            return false
+        }
     }
 
     return(

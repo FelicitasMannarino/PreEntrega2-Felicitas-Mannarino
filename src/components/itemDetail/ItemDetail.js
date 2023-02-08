@@ -13,24 +13,29 @@ const ItemDetail = (props) => {
 
     const {addItem} = useCartContext()
 
-    const [cantidad, setCantidad] = useState(0)
+    const [amount, setAmount] = useState(0)
 
     const {name,price,image,description,stock,id,category} = props.data
 
 
-    const tomarCantidad = (numero) =>{
-    setCantidad(numero)
+    const takeAmount = (number) =>{
+    setAmount(number)
     }
 
      const onAdd = () =>{
-        const product = {
-            id:id,
-            name:name,
-            category:category,
-            price:price,
-            count:cantidad,
+
+        if (amount !== 0) {
+            const product = {
+                id:id,
+                name:name,
+                category:category,
+                price:price,
+                count:amount,
+            }
+            addItem(product)
+        }else{
+            alert("Tenes 0 productos seleccionados.")
         }
-        addItem(product)
      }
 
 
@@ -44,17 +49,13 @@ const ItemDetail = (props) => {
               <h6 className='detail-price'>${price}</h6>
               <p>{description}</p>
               <div  className='box-count'>
-               <ItemCount stock={stock} cantidades={tomarCantidad}/>
+               <ItemCount stock={stock} amounts={takeAmount}/>
                <div className='box-count-onadd'>
                 <button onClick={onAdd}>Agregar al carrito</button>
                </div>
               </div>
              </div>
         </div>
-
-        
-
-
     )
 
 }

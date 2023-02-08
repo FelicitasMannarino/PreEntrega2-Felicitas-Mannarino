@@ -32,16 +32,13 @@ span{
 
 @media (max-width: 990px) {
     .box-card{
-        margin-left: 94%;
-        margin-top: 2%;
-        position: absolute;
+       position: absolute;
+       margin-left: -70px;
     }
 }
 
 @media (max-width: 700px) {
     .box-card{
-        margin-left: 93%;
-        margin-top: 3%;
         position: absolute;
     }
     .box-card i{
@@ -58,32 +55,24 @@ span{
 
 @media (max-width: 540px) {
     .box-card{
-        margin-left: 90%;
-        margin-top: 3%;
         position: absolute;
     }
 }
 
  @media (max-width: 430px) {
     .box-card{
-        margin-left: 88%;
-        margin-top: 4%;
         position: absolute;
     }
 } 
 
 @media (max-width: 365px) {
     .box-card{
-        margin-left: 85%;
-        margin-top: 5%;
         position: absolute;
     }
 } 
 
 @media (max-width: 296px) {
     .box-card{
-        margin-left: 83%;
-        margin-top: 6%;
         position: absolute;
     }
 }

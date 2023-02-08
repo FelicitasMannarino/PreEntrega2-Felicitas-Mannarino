@@ -4,6 +4,9 @@ import './Item.css';
 import ItemCount from '../itemCount/ItemCount';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 const Item = ({name,price,stock,id,image}) =>{
     
@@ -19,22 +22,24 @@ const Item = ({name,price,stock,id,image}) =>{
     
 
     return(
-        <div className='card-box'>
-            <div className='card'>
-                <img className='card-img' alt=' ' src={image}></img>
-                <div>
-                    <h6 className='card-name'>{name}</h6>
-                    <p className='card-price'>${price}</p>
-                    <div  className='box-count'>
-                    <ItemCount stock={stock} cantidades={tomarCantidad}/>
-                    <div className='box-count-onadd'>
-                    <button  onClick={onAdd}>Agregar al carrito</button>
-                    </div>
-                    </div>
-                    <Link to={`/productos/${name}/${id}`} className='card-link'>Ver detalles</Link>
-                </div>
-            </div>
-        </div>
+
+         <Row xs={1} md={4} className="g-4">
+         {Array.from({ length: 4 }).map((_, idx) => (
+           <Col>
+             <Card>
+               <Card.Img variant="top" src={image} />
+               <Card.Body>
+                 <Card.Title>{name}</Card.Title>
+                 <Card.Text>
+                   This is a longer card with supporting text below as a natural
+                   lead-in to additional content. This content is a little bit
+              
+                 </Card.Text>
+               </Card.Body>
+             </Card>
+           </Col>
+         ))}
+       </Row>
     )
 
 }
