@@ -5,38 +5,29 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.detail-img{
-    margin-top: 2rem;
-    margin-left: 4rem;
+.detail img{
+    max-width: 60%;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-.detail-name{
-    margin-top: 5rem;
-    margin-left: 80%;
-    border-bottom: 2px solid black ;
-}
-
-.detail-body{
-    margin-left: 80%;
-    margin-top: -50%;
-    
-}
-
-.detail-price{
+.detail h2{
     font-weight: bold;
 }
 
-
-.box-count-onadd button{
-    border: none;
-    margin: 0.5rem;
-    font-size: small;
-    margin-top: -2rem;
+.detail-container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.box-count-onadd{
-    background-color: #dcd0c2;
-    margin-left: 1rem;
-    border-radius: 10%;
-} 
+.detail-text{
+    display: 'flex'; 
+    justify-content: 'center';
+    align-items: 'center'; 
+    flex-direction: 'column';
+}
+
+
+
+
 

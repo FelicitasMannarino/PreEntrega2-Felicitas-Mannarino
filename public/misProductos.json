@@ -130,15 +130,15 @@
     }, {
         "id": 10017,
         "name": "ALMOHADON CIELO",
-        "description": "Almohadon de tusor gris rayado",
+        "description": "Almohadon de tusor gris rayado.",
         "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/898/220/products/d349895e-4e6c-49a2-be22-a4a755ba4645-80d4598db1bf11259316661230796568-640-0.webp",
         "price": 5290,
         "category": "Mantas y almohadones",
         "stock": 23
     }, {
         "id": 10018,
-        "name": "DISPENSER DE JABON LIQUIDO",
-        "description": "Color beige con material poliresina.",
+        "name": "DISPENSER DE JABON",
+        "description": "Dispenser de jabon liquid color beige con material poliresina.",
         "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/898/220/products/c830c6c1-5bc5-4fe3-9822-9b08ef9eb578-b18b12f81638eb001816663702955181-640-0.webp",
         "price": 4290,
         "category": "Baño y laundry",
@@ -161,7 +161,7 @@
         "stock": 7
     }, {
         "id": 10021,
-        "name": "BOLAS DE MADERA AROMATICAS",
+        "name": "BOLAS AROMATICAS",
         "description": "13 Bolas de madera macizas perfumadas con aroma a flores blancas, ideales para perfumar cajones y vestidores.",
         "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/898/220/products/9fb860c4-203a-46ee-8709-8a4683a49ae0-740d40c42aa4f5958e16597169240582-1024-1024.webp",
         "price": 2690,
@@ -169,7 +169,7 @@
         "stock": 26
     }, {
         "id": 10022,
-        "name": "JUEGO DE CUBIERTOS AMSTERDAM",
+        "name": "CUBIERTOS AMSTERDAM",
         "description": "Juego de 12 cubiertos gold. Incluye: 4 Cucharas: 19.8cm 4 Cuchillos: 21.4cm 4 Tenedores: 19.5cm",
         "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/898/220/products/bc5ffe84-32fa-4131-8ca6-97cd33abc756-69c9b544e8b433f9e816631040619449-1024-1024.webp",
         "price": 17200,
@@ -178,7 +178,7 @@
     }, {
         "id": 10023,
         "name": "ALFOMBRA BERLIN",
-        "description": "Alfombra de baño de latex antideslizante con un largo de 80cm y un ancho de 50cm",
+        "description": "Alfombra de baño de latex antideslizante con un largo de 80cm y un ancho de 50cm.",
         "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/898/220/products/98d70cb8-9321-483a-b63c-6925d4ee7913-aec54681cfaf75d79916715622506763-1024-1024.webp",
         "price": 8990,
         "category": "Baño y laundry",
@@ -202,7 +202,7 @@
     }, {
         "id": 10026,
         "name": "FRASCO DE VIDRIO",
-        "description": "Frascos de vidrio hermetico. Incluye 3. Vidrio con tapa de ceramica. 2300ml, 1800ml y 1300ml",
+        "description": "Frascos de vidrio hermetico. Incluye 3. Vidrio con tapa de ceramica. 2300ml, 1800ml y 1300ml.",
         "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/898/220/products/sets-frascos-hermeticos-a11-01bf08c4b3d3d6bce616355107284015-1024-1024.webp",
         "price": 9600,
         "category": "Cocina",
@@ -210,7 +210,7 @@
     }, {
         "id": 10027,
         "name": "COMBO BAÑO",
-        "description": "Combo que incluye: dispenser de jabon liquido, vaso pporta cepillo de dientes, cepillo limpia inodoro. Material: poliresina.",
+        "description": "Combo que incluye: dispenser de jabon liquido, vaso porta cepillo de dientes, cepillo limpia inodoro. Material: poliresina.",
         "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/898/220/products/combo-71-cdd2840a63994efe8016512383177664-1024-1024.webp",
         "price": 25160,
         "category": "Baño y laundry",
@@ -234,7 +234,7 @@
     }, {
         "id": 10030,
         "name": "SECAPLATOS",
-        "description": "Alto:19.00cm, largo:43.00cm, ancho:31.50cm. Material: Acero noxidable, madera y bandeja de plastico",
+        "description": "Alto:19.00cm, largo:43.00cm, ancho:31.50cm. Material: Acero noxidable, madera y bandeja de plastico.",
         "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/898/220/products/649cf627-234f-416f-ab0e-5026fe3cbcf9-3c9e0475dba5b8e11b16563523665982-1024-1024.webp",
         "price": 15000,
         "category": "Cocina",

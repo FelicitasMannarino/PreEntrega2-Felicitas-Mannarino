@@ -23,8 +23,6 @@ const ItemCount = (props) => {
         
     }
 
-
-
     return(
       <div className='box-count'>
         <div className='box-count-children'>

@@ -1,14 +1,11 @@
 
 import './ItemListContainer.css';
 
-
-
 import ItemList from '../itemList/ItemList';
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-
-
-
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import { db } from '../../services/firebase';
 
 
 const ItemListContainer = (props) => {
@@ -34,11 +31,19 @@ const ItemListContainer = (props) => {
   }
 
   useEffect(() => {
-    if(categoriaId){
-    getProductsByCategory(categoriaId)
-    }else {
-    getProducts()
+    const getData = async () =>{
+      const queryRef = categoriaId ? query(collection(db, "listaProductos"), where("category","==",categoriaId)) : collection(db, "listaProductos");
+      const response = await getDocs(queryRef);
+      const docsInfo = response.docs.map(doc=>{
+         const newDoc = {
+          id:doc.id,
+          ...doc.data()
+       }
+       return newDoc
+      });
+      setProductos(docsInfo);
     }
+    getData();
   }, [categoriaId])
 
 
@@ -56,7 +61,9 @@ const ItemListContainer = (props) => {
       </div>
       }  
       <ItemList productos={productos}/>
+      {(window.location.pathname !== "/" )&&
       <div className='situation'><p>{props.situation}</p></div>
+    }
     </div>
 
 )

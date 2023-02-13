@@ -1,7 +1,10 @@
+// Import the functions you need from the SDKs you need
+import {getFirestore} from "firebase/firestore"
 import { initializeApp } from "firebase/app";
-import { doc, getDocs, getFirestore } from "firebase/firestore";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyC3P3o7jufjiQ7T2KwfHfUSQ_E5vtI1ug8",
   authDomain: "react-app-d0eb2.firebaseapp.com",
@@ -11,13 +14,10 @@ const firebaseConfig = {
   appId: "1:741548259416:web:4513f7d369ec2000b9722d"
 };
 
-
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore
+export const db = getFirestore(app);
 
-const productoRef = doc(db, "listaProductos", );
-getDocs(productoRef).then((snapshot) => {
-    if (snapshot.exist()) {
-        console.log(snapshot);
-    }
-})
+
+
+   
