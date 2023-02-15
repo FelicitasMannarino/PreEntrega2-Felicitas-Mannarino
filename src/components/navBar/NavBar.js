@@ -30,7 +30,7 @@ const Navbar = () => {
                </ul>
             </div>
           </div>
-          <Link className='nav-cart' to="/carrito"><CartWidget cantidad='5'/></Link>
+          <Link className='nav-cart' to="/cart"><CartWidget/></Link>
         </nav> 
         </header>
     )

@@ -53,10 +53,10 @@ const ItemListContainer = (props) => {
       <div className='categories'>
         <ul className='categories-list'>
           <li><Link className='category-link' to="/productos">Todos</Link></li>
-          <li><Link className='category-link' to="/categoria/Aromas" >Aromas</Link></li>
-          <li><Link className='category-link' to="/categoria/Cocina">Cocina</Link></li>
-          <li><Link className='category-link' to="/categoria/Baño y laundry">Baño y laundry</Link></li>
-          <li><Link className='category-link' to="/categoria/Mantas y almohadones ">Mantas y almohadones</Link></li>
+          <li><Link className='category-link' to="/productos/Aromas" >Aromas</Link></li>
+          <li><Link className='category-link' to="/productos/Cocina">Cocina</Link></li>
+          <li><Link className='category-link' to="/productos/Baño y laundry">Baño y laundry</Link></li>
+          <li><Link className='category-link' to="/productos/Mantas y almohadones ">Mantas y almohadones</Link></li>
         </ul>
       </div>
       }  

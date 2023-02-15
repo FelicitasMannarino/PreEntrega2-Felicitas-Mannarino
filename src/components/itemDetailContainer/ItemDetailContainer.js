@@ -3,15 +3,13 @@ import { useParams } from 'react-router-dom';
 import {doc, getDoc} from 'firebase/firestore';
 import { db } from '../../services/firebase';
 
-
-
 import './ItemDetailContainer.css';
-
+import ItemDetail from '../itemDetail/ItemDetail';
 
 
 const ItemDetailContainer = () => {
 
-    const { productId } = useParams()
+    const { productoId } = useParams()
     
     const [product, setProduct] = useState([])
 
@@ -275,30 +273,30 @@ const ItemDetailContainer = () => {
     //         "stock": 19
     //     }
     // ]
-
     useEffect(()=>{
         const getProducto = async()=>{
-            const queryRef = doc(db, "listaProductos",productId);
+            const queryRef = doc(db, "listaProductos",productoId);
             const response = await getDoc(queryRef);
             const newDoc = {
                 id:response.id,
                 ...response.data()
             }
             console.log(newDoc)
+            setProduct(newDoc);
         }
         
-        // setProduct(<ItemDetail key={json1.find(e => e.id == productId).id} data={json1.find(e => e.id == productId)} />)
+        // setProduct(<ItemDetail key={json1.find(e => e.id == productoId).id} data={json1.find(e => e.id == productoId)} />)
         // return () => {
-        //     setProduct(<ItemDetail key={json1.find(e => e.id == productId).id} data={json1.find(e => e.id == productId)} />)
+        //     setProduct(<ItemDetail key={json1.find(e => e.id == productoId).id} data={json1.find(e => e.id == productoId)} />)
         // }
         getProducto();
-    },[productId])
+    },[productoId])
 
     
 
     return(
         <div>
-            
+            <ItemDetail product={product}/>
         </div>
     )
 }

@@ -13,7 +13,7 @@ import ItemListContainer from './components/itemListContainer/ItemListContainer.
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer.js';
 import AboutUs from './components/aboutUs/AboutUs';
 import Contact from './components/contact/Contact.js';
-import Cart from './components/cart/Cart.js';
+import CartContainer from './components/cartContainer/CartContainer';
 import Footer from './components/footer/Footer.js';
 import NotFound404 from './components/notFound404/NotFound404.js';
 
@@ -33,10 +33,10 @@ root.render(
         <Route exact path='/' element={<Home situation="Inicio"/>}/>
         <Route exact path='/productos' element={<ItemListContainer situation="Productos"/>}/>
         <Route exact path='/productos/:productoName/:productoId' element={<ItemDetailContainer/>}/>
-        <Route exact path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
+        <Route exact path='/productos/:categoriaId' element={<ItemListContainer/>}/>
         <Route exact path='/nosotros' element={<AboutUs situation="Nosotros"/>}/>
         <Route exact path='/contacto' element={<Contact situation="Contacto"/>}/>
-        <Route exact path='/carrito' element={<Cart situation="Carrito"/>} />
+        <Route exact path='/cart' element={<CartContainer/>} />
         <Route exact path='*' element={<NotFound404/>}/>
        </Routes>
       <Footer/>

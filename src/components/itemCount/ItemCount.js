@@ -3,33 +3,30 @@ import { useState } from 'react'
 //estilos
 import './ItemCount.css';
 
-const ItemCount = (props) => {
-    const [count,setCount] = useState(0)
+const ItemCount = ({stock, initial, onAdd}) => {
 
-    const disOne = () =>{
-        if(count > 0){
-            setCount(count - 1)
+    const [count, setCount] = useState(initial);
 
-            props.amounts(count)
+    const decrementar = ()=>{
+        if(count>1){
+            setCount(count-1)
         }
     }
 
-    const addOne = () => {
-        if(count < props.stock){
-            setCount(count + 1)
-
-            props.amounts(count)
+    const incrementar = ()=>{
+        if(count<stock){
+            setCount(count+1)
         }
-        
     }
 
     return(
       <div className='box-count'>
         <div className='box-count-children'>
            <div className='box-count-grandchild'>
-            <button onClick={disOne}>-</button>
+            <button disabled={stock===0} onClick={decrementar}>-</button>
             <p className='count'>{count}</p>
-            <button onClick={addOne}>+</button>
+            <button disabled={stock===0} onClick={incrementar}>+</button>
+            <button disabled={stock === 0} onClick={()=>onAdd(count)}>Agregar al carrito</button>
            </div>
         </div>
       </div> 
