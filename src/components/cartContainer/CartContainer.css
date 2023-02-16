@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
+
+.cart-container{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+}
+
+.cart-container-link{
+    color: black;
+    text-decoration: none;
+}
+
+.cart-container-i{
+    font-size: x-small;
+    position: absolute;
+    margin-top: 4px;
+}
+
+.cart-container-shop{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.cart-container-shop p{
+    margin-left: 18px;
+    position: relative;
+    font-size: 15px;
+}
+
+.cart-container-shop p::after{
+    content: '';
+    position: absolute;
+    width: 12%;
+    height: 1px;
+    bottom: 0;
+    left: -15px;
+    right: 0;
+    background-color: #937653;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.cart-container-shop p:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cart-container-shop p:hover{
+    color: black;
+}
+
+.cart-container-check{
+    margin-left: 78%;
+    margin-top: 16%;
+    color: white;
+    display: grid;
+}
+
+.cart-container-back-check{
+    background-color: black;
+    margin-left: 80%;
+    height: 50px;
+    display: flex;
+    margin-right: 5%;
+}
+
+.cart-container-check:hover{
+    color: white;
+}
+
+.cart-container-back-check:hover{
+    background-color: #937653;
+}
+
+.cart-container-total{
+    text-align: end;
+    margin-right: 6%;
+    font-size: 18px;
+}
+
+.cart-container button{
+    background-color: transparent;
+    border: none;
+    margin-left: 85%;
+    margin-bottom: 20px;
+}
+
+.cart-container button p::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    background-color: #937653;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.cart-container button p:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+

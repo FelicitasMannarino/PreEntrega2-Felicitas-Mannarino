@@ -40,10 +40,6 @@ nav{
     position: relative;
 }
 
-.list li:visited{
-    color: tomato;
-}
-
 .list li::after{
     content: '';
     position: absolute;

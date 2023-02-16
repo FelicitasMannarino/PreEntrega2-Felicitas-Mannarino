@@ -26,11 +26,32 @@
 }
 
 .box-count-grandchild{
-
     border: 1px solid rgb(178, 174, 174);
     border-radius: 10%;
     display: flex; 
     max-width: 100px;
-
 }
 
+.box-count-add{
+    position: absolute;
+    margin-left: 28%;
+}
+
+.box-count-add button::after{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    bottom: 5px;
+    left: 15px;
+    right: 0;
+    background-color: #937653;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.box-count-add button:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

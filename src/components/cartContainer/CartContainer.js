@@ -3,11 +3,12 @@ import { CartContext } from '../../context/CartContext';
 import CartItem from '../cartItem/CartItem';
 import { collection, addDoc, doc, updateDoc } from "firebase/firestore";
 import { db } from '../../services/firebase';
+import { Link } from 'react-router-dom';
 
 import './CartContainer.css'
 
 const CartContainer = () => {
-  const {productCartList, clearProductCartList} = useContext(CartContext);
+  const {productCartList, clearProductCartList, getTotal} = useContext(CartContext);
   const [orderId, setOrderId] = useState(undefined);
   console.log(productCartList)
 
@@ -28,37 +29,32 @@ const CartContainer = () => {
     setOrderId(response.id);
   }
 
-  const updatePrice = async()=>{
-    try {
-      const queryRef = doc(db, "listaProductos","5QQR7IIpcbL8BEA8UaPp");
-      await updateDoc(queryRef,{price:111});
-      console.log("producto actualizado");
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
   return (
-    <div>
-      <p>Su numero de pedido es {orderId}</p>
+    <div className='cart-container'>
       <div>
         {
           productCartList.length>0 ?
           <>
+          <div className='cart-container-shop'>
+           <Link className='cart-container-link' to='/productos'><i className="bi bi-chevron-left cart-container-i"></i><p> Seguir comprando</p></Link>
+           <button onClick={clearProductCartList}><p>Vaciar el carrito</p></button>
+          </div>
+          {/* <p>Su numero de pedido es {orderId}</p> */}
             {
               productCartList.map(product=>(
                 <CartItem key={product.id} product={product}/>
               ))
             }
+            <p className='cart-container-total'>Total: $ {getTotal()}</p>
             <hr/>
-            <button onClick={clearProductCartList}>Vaciar el carrito</button>
+            <div className='cart-container-back-check'>
+             <Link className='cart-container-link' to='/compra'><p className='cart-container-check'>Checkout</p></Link>
+            </div>
           </>
           :
           <p>No has agregado productos</p>
         }
       </div>
-      <button onClick={sendOrder}>Enviar formulario</button>
-      <button onClick={updatePrice}>Actualizar el precio de un producto</button>
     </div>
   )
 }

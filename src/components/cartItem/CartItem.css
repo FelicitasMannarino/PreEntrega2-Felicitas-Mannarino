@@ -4,10 +4,68 @@
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .cart-img{
-    height: 50px;
-    width: 50px;
+    width: 30%;
+    display: flex;
+}
+
+.cart-img img{
+    width: 200px;
+    height: 200px;
+    margin-left: 40%;
+    margin-bottom: 25px;
+}
+
+.cart-info button{
+    border: 0 solid white;
+}
+
+.cart-info i{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 8px;
+}
+
+.cart-info ul{
+    list-style: none;
+    display: flex;
+}
+
+.cart-name{
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.cart-info li{
+    margin-left: 100px;
+    margin-top: 20%;
+}
+
+.cart-qty{
+    position: absolute;
+    margin-left: 9%;
+    margin-top: 30px;
+    font-size: smaller;
+    color: rgb(131, 131, 131);
+}
+
+.cart-info button i::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    background-color: #937653;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.cart-info button i:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }

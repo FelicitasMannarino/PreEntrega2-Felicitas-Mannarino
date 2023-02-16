@@ -14,21 +14,6 @@ const ItemListContainer = (props) => {
 
   const [productos,setProductos] = useState([])
 
-  const getProductsByCategory= (id) => {
-    fetch('/misProductos.json')
-    .then(res=>res.json())
-    .then(json=>
-    setProductos(json.filter(el => el.category === id))
-  )
-  }
-
-  const getProducts = () => {
-    fetch('/misProductos.json')
-    .then(res=>res.json())
-    .then(json=>
-    setProductos(json)
-  )
-  }
 
   useEffect(() => {
     const getData = async () =>{

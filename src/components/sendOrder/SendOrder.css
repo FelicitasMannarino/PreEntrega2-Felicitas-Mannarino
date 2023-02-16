@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
+
+.form-container{
+    font-family: 'Montserrat', sans-serif;
+    margin: 5% 15% 0 15%;
+    border: none;
+}
+
+.form{
+    border: none;
+}
