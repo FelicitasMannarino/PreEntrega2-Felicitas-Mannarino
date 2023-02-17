@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
-
 .footer{
     text-align: center;
     font-size: 13px;
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 10%;
 }
 
 .footer-top{
@@ -49,6 +47,9 @@
     font-weight: bold;
 }
 
+.footer-me{
+    font-size: smaller;
+}
 
 @media (max-width: 600px) {
     .footer p{

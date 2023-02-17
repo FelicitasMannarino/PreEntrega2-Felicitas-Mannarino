@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
-
 .cart-container{
-    font-family: 'Montserrat', sans-serif;
     margin-left: 20px;
 }
 
@@ -63,6 +60,7 @@
     height: 50px;
     display: flex;
     margin-right: 5%;
+    transition: 0.4s;
 }
 
 .cart-container-check:hover{
@@ -103,5 +101,19 @@
 .cart-container button p:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.cart-empty{
+    text-align: center;
+    margin: 10% 10%;
+}
+
+.cart-empty-link{
+    color: black;
+    text-decoration: none;
+}
+
+.cart-empty-link:hover{
+    color: #937653;
 }
 

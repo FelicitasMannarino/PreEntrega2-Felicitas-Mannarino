@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
-
-header{
-    font-family: 'Montserrat', sans-serif;
-}
-
 nav{
     background-color: #e8e2db;
-    width: 101%;
+    width: 100%;
 }
 
 .title {
@@ -59,6 +53,7 @@ nav{
     transform-origin: bottom left;
 }
 
+
 .nav-cart{
     color: black;
 }
@@ -66,6 +61,8 @@ nav{
 .nav-cart:hover{
     color: black;
 }
+
+
 
 @media (max-width: 900px) {
     .title{

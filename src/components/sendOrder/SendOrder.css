@@ -1,11 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
-
 .form-container{
-    font-family: 'Montserrat', sans-serif;
-    margin: 5% 15% 0 15%;
+    margin: 8% 25% 0 25%;
     border: none;
 }
 
 .form{
     border: none;
 }
+
+.order-confirm{
+    color: white;
+    width: 40%;
+    background-color: black;
+    border: none;
+    margin-top: 30px;
+    margin-left: 30%;
+    transition: 0.3s;
+}
+
+.order-confirm:hover{
+    background-color: #937653;
+}
+
+.order-info{
+    font-size: small;
+    margin-left: 15%;
+}
+
+.modal{ 
+}
+
+.modal i{
+    color: black;
+}
+
+.modal h6{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.modal h6::after{
+    content: '';
+    position: absolute;
+    width: 47%;
+    height: 1px;
+    bottom: 23px;
+    left: 50%;
+    right: 0;
+    background-color: #937653;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.modal h6:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.modal i::after{
+    content: '';
+    position: absolute;
+    width: 4%;
+    height: 1px;
+    bottom: 78%;
+    left: 93%;
+    right: 0;
+    background-color: #937653;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.modal i:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.modal h3{
+    font-weight: bold;
+    color: #927652;
+}
+

@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
-
 .box-count{
-    font-family: 'Montserrat', sans-serif;
     display: flex;
-    margin-left: 0.5rem;
-    max-width: 300px;
-    max-height: 35px;
-   
+    margin-top: 50px;
+    margin-left: 2rem;
+    max-height: 55px;
 }
 
 .box-count button{
@@ -17,8 +13,26 @@
 }
 
 .count{
-    margin-top: 0.5rem;
-    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.box-count-i p{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.box-count-i p:hover{
+    color: #937653;
+}
+
+.box-count-im p{
+    margin-left: 60px;
+}
+
+.box-count-grandchild button:disabled:hover{
+    color: white;
 }
 
 .box-count-children{
@@ -27,23 +41,34 @@
 
 .box-count-grandchild{
     border: 1px solid rgb(178, 174, 174);
-    border-radius: 10%;
     display: flex; 
-    max-width: 100px;
+    border-radius: 500px;
 }
 
-.box-count-add{
-    position: absolute;
-    margin-left: 28%;
+.box-count-add p{
+    font-size: 16px;
+    margin-top: -5px;
+    transition: 1s;
+    font-weight: bold;
 }
 
-.box-count-add button::after{
+.box-count-add p:hover{
+    color: #937653;
+}
+
+.modal p{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.modal p::after{
     content: '';
     position: absolute;
-    width: 80%;
+    width: 19%;
     height: 1px;
-    bottom: 5px;
-    left: 15px;
+    bottom: 18%;
+    left: 79%;
     right: 0;
     background-color: #937653;
     transform: scaleX(0);
@@ -51,7 +76,8 @@
     transition: transform 0.3s ease-out;
 }
 
-.box-count-add button:hover::after{
+.modal p:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+

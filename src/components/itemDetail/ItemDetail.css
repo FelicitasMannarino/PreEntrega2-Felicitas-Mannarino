@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
-
-
-.detail{
-    font-family: 'Montserrat', sans-serif;
-}
-
-.detail img{
+.detail-container img{
     max-width: 50%;
     margin-top: 30px;
     margin-left: 20px;
@@ -35,6 +28,45 @@
 .detail-description{
     margin-top: 50px;
 }
+
+.detail-pay{
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 500px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    border-radius: 500px;
+}
+
+.detail-pay:hover{
+    background-color: #9c7d5c;
+}
+
+.detail-container button{
+    border: none;
+    background-color: transparent;
+}
+
+.modal img{
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.modal p{
+    font-weight: bold;
+}
+
+.detail-off{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(192, 2, 2);
+}
+
+
 
 
 

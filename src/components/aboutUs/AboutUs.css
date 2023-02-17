@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
-
 .us{
-    font-family: 'Montserrat', sans-serif;
     margin-top: 5%;
 }
 
@@ -16,6 +13,7 @@
     padding-left: 25%;
     padding-right: 25%;
     font-size: 15px;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 770px) {

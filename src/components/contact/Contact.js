@@ -16,7 +16,7 @@ const Contact = (props) =>{
               <li>Sabados: 9:00AM-3:00AM</li>
             </ul>
           </div>
-            <div className='situation'><p>{props.situation}</p></div>
+          <div className='situation'><p>{props.situation}</p></div>
         </div>
     )
 }

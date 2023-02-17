@@ -1,9 +1,18 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext();
 
+const productosLocalStorage = JSON.parse(localStorage.getItem('carrrito') || '[]')
+
+
 export const CartProvider = ({children})=>{
-    const [productCartList, setProductCartList] = useState([]);
+
+    const [productCartList, setProductCartList]= useState(productosLocalStorage);
+
+    useEffect(()=>{
+        localStorage.setItem('carrrito', JSON.stringify(productCartList))
+    },[productCartList])
+
 
     const isInCart = (id)=>{
         const elementExists = productCartList.some((elemento)=>elemento.id === id);
@@ -47,6 +56,7 @@ export const CartProvider = ({children})=>{
         const total = productCartList.reduce((acc,product)=>acc + product.quantity * product.price,0);
         return total;
     }
+
 
     return(
         <CartContext.Provider value={{productCartList,addProduct, removeProduct, clearProductCartList, isInCart, getTotalProducts, getTotal}}>

@@ -1,9 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
 
-.home-products{
+*{
     font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+}
+
+.home-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 5%;
+    padding: 2% 0 0 8%;
+    background-color: #d3bea6
+}
+
+.home-info ul{
+    list-style: none;
+    max-width: 250px;
     text-align: center;
-    margin-top: 2rem;
-    background-color: #e8e2db7c;
-    margin-bottom: 50px;
+}
+
+.home-info ul li{
+    margin-top: 10px;
+}
+
+.home-info ul li i{
+    font-size: 35px;
+}
+
+.home-info ul li h5{
+    font-weight: bold;
 }

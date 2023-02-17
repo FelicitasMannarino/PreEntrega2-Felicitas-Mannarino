@@ -1,23 +1,18 @@
-import './CartWidget.css';
-
-import {Link} from 'react-router-dom';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 
-
+import './CartWidget.css';
 
 const CardWidget = () => {
 
-    const {getTotalProducts, productCartList} = useContext(CartContext);
+    const {getTotalProducts} = useContext(CartContext);
 
     return(
         <div className='box-card'>
-
-         <i className='bi bi-bag cart-widget'></i>
-         <div className='cantidad'>
-          <span>{getTotalProducts()}</span>
-         </div>
-
+          <i className='bi bi-bag cart-widget'></i>
+          <div className='cantidad'>
+            <span>{getTotalProducts()}</span>
+          </div>
         </div>
     )
     

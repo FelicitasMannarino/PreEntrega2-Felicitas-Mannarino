@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Italiana&family=Montserrat&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300;400;600&display=swap');
-
 .cart-item{
-    font-family: 'Montserrat', sans-serif;
+
     display: flex;
     flex-direction: row;
+    border-bottom: 1px solid rgba(99, 96, 96, 0.4);
+    margin: 0 5% 2% 5% ;
 }
+
 
 .cart-img{
     width: 30%;
@@ -14,7 +15,7 @@
 .cart-img img{
     width: 200px;
     height: 200px;
-    margin-left: 40%;
+    margin-left: 25%;
     margin-bottom: 25px;
 }
 
@@ -24,7 +25,7 @@
 
 .cart-info i{
     position: absolute;
-    margin-left: 35%;
+    margin-left: 25%;
     margin-top: 8px;
 }
 
@@ -33,9 +34,16 @@
     display: flex;
 }
 
+.cart-price{
+    font-weight: bold;
+}
+
 .cart-name{
     max-width: 100px;
     min-width: 100px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .cart-info li{

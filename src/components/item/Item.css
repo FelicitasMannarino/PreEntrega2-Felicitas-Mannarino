@@ -2,6 +2,9 @@
 
 .card-box{
     font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .card{
@@ -12,7 +15,6 @@
 
 .card-img{
     max-height: 15rem;
-    max-width: 15rem;
 }
 
 .card-price{
@@ -41,16 +43,17 @@
 
 .card-details{
     position: relative;
-    margin-top: 2px;
     margin-left: -5%;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .card-details::after{
     content: '';
     position: absolute;
-    width: 40%;
+    width: 41%;
     height: 1px;
-    bottom: 0;
+    bottom: 5px;
     left: 70px;
     right: 0;
     background-color: #937653;
@@ -63,6 +66,8 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+
 
 
 
