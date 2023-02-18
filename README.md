@@ -1,3 +1,6 @@
+Mi proyecto es una E-commerce con la idea de vender productos para la decoracion o la funcionaidad del hogar. Para su creacion inclui Bootstrap para usar sus componentes y de esta manera ahorrar codigo de css. Tambien utilice los iconos de Bootstrap y las fuentes de Font Awesome para hacerlo mas agradable visualmente.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
